@@ -238,8 +238,6 @@ def sampling_script(device, action, dataset, num_images, save_path, batch_size, 
             imageio.imwrite(imgpath, img)
     return all_images
 
-X = sampling_script('colabtpu', 'folder', 'ffhq', 16, './images', 16, 100, False, 0., 'float32', 'random')
-
 if __name__ == '__main__':
     from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
     parser = ArgumentParser(formatter_class=ArgumentDefaultsHelpFormatter)
