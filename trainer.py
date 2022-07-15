@@ -243,3 +243,11 @@ class Trainer():
         
         
 if __name__ == '__main__':
+    from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
+    parser = ArgumentParser(formatter_class=ArgumentDefaultsHelpFormatter)
+    parser.add_argument("dataset", type=str, help="Which dataset's images to write")
+    args = parser.parse_args()
+
+    model_args, training_args = get_config(args.dataset)
+    trainer = Trainer(training_args, model_args)
+    trainer.train()
