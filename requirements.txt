@@ -1,0 +1,10 @@
+tensorflow==2.8.2
+numpy==1.21.6
+imageio==2.4.1
+tensorflow_addons=0.17.1
+matplotlib==3.2.2
+tqdm==4.64.0
+h5py==3.1.0
+opencv-python==4.1.2
+ml_collections
+
