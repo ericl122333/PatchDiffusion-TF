@@ -244,6 +244,7 @@ if __name__ == '__main__':
     from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
     parser = ArgumentParser(formatter_class=ArgumentDefaultsHelpFormatter)
 
+    parser.add_argument("device", type=str, help="'colabtpu' for colab TPU, 'cpu' for CPU, otherwise will use GPU (single gpu only)")
     parser.add_argument("action", type=str, help="'fid' to write to an npz file, 'grid' to create a grid of images, 'folder' to write individual images")
     parser.add_argument("dataset", type=str, help="Which dataset's images to write")
     parser.add_argument("num_images", type=str, help="How many images to write")
@@ -257,4 +258,4 @@ if __name__ == '__main__':
     
     
     args = parser.parse_args()
-    main(args.action, args.dataset, args.num_images, args.save_path, args.batch_size, args.timesteps, args.modified_stride, args.guidance, args.policy, args.seed)
+    main(args.device, args.action, args.dataset, args.num_images, args.save_path, args.batch_size, args.timesteps, args.modified_stride, args.guidance, args.policy, args.seed)
