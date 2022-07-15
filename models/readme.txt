@@ -1,0 +1,3 @@
+This folder will contain the model checkpoints, if using pretrained weights, make sure to download the model's .h5 file and put it in its corresponding folder. For example, to setup the ffhq model, download the file at https://drive.google.com/file/d/1hFD9jxxd3QBDuKBRobI4zGg9LCExVkhx/view?usp=sharing) and put it in ./ffhq (should be called ema_weights.h5)
+
+Note: Our actual file system stores the checkpoint and h5 files here, but in this case, the directories are all empty (except for readme) because they files are too large to be uploaded to github.

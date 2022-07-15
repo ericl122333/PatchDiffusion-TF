@@ -1,0 +1,1 @@
+pretrained lsun model (P=4) goes here

@@ -1,0 +1,1 @@
+pretrained ffhq model goes here
